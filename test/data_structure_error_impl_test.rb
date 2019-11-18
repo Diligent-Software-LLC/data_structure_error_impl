@@ -25,7 +25,7 @@ class DataStructureErrorImplTest < Minitest::Test
 
   # test_test_message_initialized().
   # @abstract:
-  # Test message initialized variables/ message attribute is the test message.
+  # Test message initialized variables message attribute is the test message.
   def test_test_message_initialized()
     assert_equal(@test_message_initialized.message(), TEST_MESSAGE)
   end

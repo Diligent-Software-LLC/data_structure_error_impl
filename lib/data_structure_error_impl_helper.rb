@@ -5,7 +5,8 @@ module DataStructureErrorImplHelper
 
   # choose(explanation).
   # @abstract:
-  # In the case the explanation String is nil, sets the message the DEFAULT_MESSAGE. Otherwise, sets the message the argued explanation.
+  # In the case the explanation String is nil, sets the message the
+  # DEFAULT_MESSAGE. Otherwise, sets the message the argued explanation.
   def choose(explanation)
 
     if (explanation.nil?())
@@ -18,7 +19,8 @@ module DataStructureErrorImplHelper
 
   # raise?(presumed_acceptable).
   # @abstract:
-  # Boolean method. In the case the argument is an unacceptable type, returns true. Otherwise, returns false.
+  # Boolean method. In the case the argument is an unacceptable type, returns
+  # true. Otherwise, returns false.
   # @param presumed_acceptable: an object, presumed acceptable.
   def raise?(presumed_acceptable)
 
