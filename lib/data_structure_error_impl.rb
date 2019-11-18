@@ -3,6 +3,7 @@ require "data_structure_error_impl/version"
 class DataStructureErrorImpl < DataStructureError
 
   ACCEPTABLE_C_TYPES = [:Array, :Hash, :Queue, :SizedQueue, :Struct]
+  INTERFACE_NAME     = superclass()
 
   # initialize(message_argument = nil).
   # @abstract:
@@ -26,7 +27,7 @@ class DataStructureErrorImpl < DataStructureError
   # structure, raises.
   # @param data_structure_type: an unknown type object.
   def raise_exception(data_structure_type)
-    (raise superclass(), message()) if raise?(data_structure_type)
+    (raise INTERFACE_NAME, message()) if raise?(data_structure_type)
   end
 
   private

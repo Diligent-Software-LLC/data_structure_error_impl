@@ -6,14 +6,13 @@ require "test_helper"
 class DataStructureErrorImplTest < Minitest::Test
 
   TEST_MESSAGE         = "Test."
-  IMPLEMENTATION_CLASS = DataStructureErrorImpl
 
   # setup().
   # @abstract:
   # Prepare the tests.
   def setup()
     @test_message_initialized = DataStructureErrorImpl.new(TEST_MESSAGE)
-    @default_initialied       = DataStructureErrorImpl.new()
+    @default_initialized      = DataStructureErrorImpl.new()
   end
 
   # test_that_it_has_a_version_number().
@@ -34,7 +33,7 @@ class DataStructureErrorImplTest < Minitest::Test
   # @abstract:
   # Default initialization's message attribute is the default message.
   def test_default_initialized()
-    assert_equal(@default_initialized.message(), DEFAULT_MESSAGE)
+    assert_equal(@default_initialized.message(), DataStructureError::DEFAULT_MESSAGE)
   end
 
   # test_unacceptable_type_raises().
@@ -43,9 +42,8 @@ class DataStructureErrorImplTest < Minitest::Test
   def test_unacceptable_type_raises()
 
     unacceptable         = 0
-    error_implementation = DataStructureErrorImpl.new()
-    assert_raises (IMPLEMENTATION_CLASS) {
-      error_implementation.raise_exception(unacceptable)
+    assert_raises (DataStructureErrorImpl::INTERFACE_NAME) {
+      @default_initialized.raise_exception(unacceptable)
     }
 
   end
