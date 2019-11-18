@@ -5,8 +5,8 @@ module DataStructureErrorImplHelper
 
   # choose(explanation).
   # @abstract:
-  # In the case the explanation String is nil, sets the message the
-  # DEFAULT_MESSAGE. Otherwise, sets the message the argued explanation.
+  # In the case the explanation String is nil, returns the DEFAULT_MESSAGE.
+  # Otherwise, returns the argued explanation.
   def choose(explanation)
 
     if (explanation.nil?())
