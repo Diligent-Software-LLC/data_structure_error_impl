@@ -1,4 +1,4 @@
-# DataStructureErrorImpl
+# DataStructureErrorImpl [![Gem Version](https://badge.fury.io/rb/data_structure_error_impl.svg)](https://badge.fury.io/rb/data_structure_error_impl) ![Gem](https://img.shields.io/gem/dt/data_structure_error_impl)
 
 Implements and subclasses the `DataStructureError`
 class interface. There are three `public` instance methods, one `private` 
