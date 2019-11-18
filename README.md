@@ -1,8 +1,8 @@
 # DataStructureErrorImpl
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/data_structure_error_impl`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Implements and subclasses the DataStructureError
+class interface. There are three public instance methods, one private instance
+method, and two helper methods.
 
 ## Installation
 
@@ -22,7 +22,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Public instance methods
+The three public instance methods are the constructor, the message(), and raise_exception(data_structure_type).
+
+#### initialize(message_argument = nil)
+The constructor. The message defaults the DEFAULT_MESSAGE.
+
+#### message()
+
+Getter method. Gets and returns the message attribute.
+
+#### raise_exception(data_structure_type)
+
+In the case the argument is a data object or an unacceptable data structure, raises. Takes an unknown type object.
+
+### Private instance methods
+The private instance method is the message=(explanation).
+
+#### message=(explanation)
+
+
+
+### Helper methods
+The two helper methods are choose(explanation), and raise?(presumed_acceptable).
+
+#### choose(explanation)
+
+#### raise?(presumed_acceptable)
 
 ## Development
 
