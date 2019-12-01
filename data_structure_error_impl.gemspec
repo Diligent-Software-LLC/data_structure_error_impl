@@ -10,9 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary     = %q{Implements and subclasses the DataStructureError
 class interface.}
-  spec.description = %q{Implements and subclasses the DataStructureError
-class interface. There are three public instance methods, one private instance
-method, and two helper methods.}
+  spec.description = %q{Fixed architectural problems.}
   spec.homepage    = "https://github.com/scientist8202/data_structure_error_impl"
   spec.license     = "MIT"
 
@@ -43,5 +41,6 @@ method, and two helper methods.}
   spec.add_development_dependency "minitest", "~> 5.0"
 
   spec.add_dependency 'data_structure_error'
+  spec.add_dependency 'argument_type_error_helper'
 
 end

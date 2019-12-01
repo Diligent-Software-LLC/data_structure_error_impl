@@ -33,7 +33,8 @@ class DataStructureErrorImplTest < Minitest::Test
   # @abstract:
   # Default initialization's message attribute is the default message.
   def test_default_initialized()
-    assert_equal(@default_initialized.message(), DataStructureError::DEFAULT_MESSAGE)
+    assert_equal(@default_initialized.message(),
+                 DataStructureErrorImpl::DEFAULT_MESSAGE)
   end
 
   # test_unacceptable_type_raises().

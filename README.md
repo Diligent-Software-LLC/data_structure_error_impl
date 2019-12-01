@@ -1,8 +1,8 @@
 # DataStructureErrorImpl [![Gem Version](https://badge.fury.io/rb/data_structure_error_impl.svg)](https://badge.fury.io/rb/data_structure_error_impl) ![Gem](https://img.shields.io/gem/dt/data_structure_error_impl)
 
 Implements and subclasses the `DataStructureError`
-class interface. There are three `public` instance methods, one `private` 
-instance method, and two helper methods.
+class interface. There are three `public` instance methods, and two `private` 
+instance methods.
 
 ## Installation
 
@@ -39,22 +39,13 @@ In the case the argument is a data object or an unacceptable data structure,
 raises. Takes an unknown type object.
 
 ### Private instance methods
-The private instance method is `message=(explanation)`.
+The two private instance methods are `message=(explanation)`, and 
+`raise?(presumed_acceptable)`.
 
 #### `message=(explanation)`
 
 Setter method. In the case the explanation is a `String`, sets the message the 
 explanation. Otherwise, sets the message the `DEFAULT_MESSAGE`.
-
-### Helper methods
-
-The two helper methods are `choose(explanation)`, and 
-`raise?(presumed_acceptable)`.
-
-#### `choose(explanation)`
-
-In the case the explanation `String` is `nil`, returns the `DEFAULT_MESSAGE`. 
-Otherwise, returns the argued explanation.
 
 #### `raise?(presumed_acceptable)`
 
@@ -71,7 +62,7 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ### Testing
 
-The methods were basically tested.
+Unit and integration tested.
 
 ## Contributing
 

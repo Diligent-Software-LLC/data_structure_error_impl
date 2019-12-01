@@ -1,7 +1,7 @@
 # Copyright (C) 2019 Diligent Software LLC. All rights reserved. Released
 # under the MIT License.
 require 'data_structure_error'
-require 'data_structure_error_impl_helper'
+require 'argument_type_error_helper'
 
 # DataStructureErrorImpl.
 # @abstract:
@@ -9,8 +9,8 @@ require 'data_structure_error_impl_helper'
 # @attribute message: refer interface.
 class DataStructureErrorImpl < DataStructureError
 
-  include DataStructureErrorImplHelper
+  include ArgumentTypeErrorHelper
 
-  VERSION = "1.0.0"
+  VERSION = "1.1.0"
 
 end
