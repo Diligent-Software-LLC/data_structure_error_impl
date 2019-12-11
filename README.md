@@ -1,15 +1,15 @@
 # DataStructureErrorImpl [![Gem Version](https://badge.fury.io/rb/data_structure_error_impl.svg)](https://badge.fury.io/rb/data_structure_error_impl) ![Gem](https://img.shields.io/gem/dt/data_structure_error_impl)
 
 Implements and subclasses the `DataStructureError`
-class interface. There are three `public` instance methods, and two `private` 
-instance methods.
+class interface. There are three `public` instance methods, one `private` 
+instance method, and one helper method.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'data_structure_error_impl'
+gem 'data_structure_error_impl', `~> 1.2.0`
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install data_structure_error_impl
+    $ gem install data_structure_error_impl -v 1.2.0
 
 ## Usage
 
@@ -39,15 +39,16 @@ In the case the argument is a data object or an unacceptable data structure,
 raises. Takes an unknown type object.
 
 ### Private instance methods
-The two private instance methods are `message=(explanation)`, and 
-`raise?(presumed_acceptable)`.
+The private instance method is `message=(explanation)`.
 
 #### `message=(explanation)`
 
 Setter method. In the case the explanation is a `String`, sets the message the 
 explanation. Otherwise, sets the message the `DEFAULT_MESSAGE`.
 
-#### `raise?(presumed_acceptable)`
+### Helper methods
+
+#### `acceptable?(argument_object)`
 
 Boolean method. In the case the argument is an unacceptable type, returns 
 `true`. Otherwise, returns `false`. Takes a presumed acceptable object.
@@ -67,7 +68,7 @@ Unit and integration tested.
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at 
-https://github.com/[USERNAME]/data_structure_error_impl. This project is 
+https://github.com/scientist8202/data_structure_error_impl. This project is 
 intended to be a safe, welcoming space for collaboration, and contributors are 
 expected to adhere to the 
 [Contributor Covenant](http://contributor-covenant.org) code of conduct.
@@ -81,4 +82,4 @@ The gem is available as open source under the terms of the
 
 Everyone interacting in the DataStructureErrorImpl project’s codebases, issue 
 trackers, chat rooms and mailing lists is expected to follow the 
-[code of conduct](https://github.com/[USERNAME]/data_structure_error_impl/blob/master/CODE_OF_CONDUCT.md).
+[code of conduct](https://github.com/scientist8202/data_structure_error_impl/blob/master/CODE_OF_CONDUCT.md).

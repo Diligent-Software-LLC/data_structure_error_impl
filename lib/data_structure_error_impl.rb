@@ -1,9 +1,12 @@
 require "data_structure_error_impl/version"
+require 'data_structure_error_impl_helper'
 
 class DataStructureErrorImpl < DataStructureError
 
   ACCEPTABLE_C_TYPES = [:Array, :Hash, :Queue, :SizedQueue, :Struct]
   INTERFACE_NAME     = superclass()
+
+  include DataStructureErrorImplHelper
 
   # initialize(message_argument = nil).
   # @abstract:
@@ -27,7 +30,7 @@ class DataStructureErrorImpl < DataStructureError
   # structure, raises.
   # @param data_structure_type: an unknown type object.
   def raise_exception(data_structure_type)
-    (raise INTERFACE_NAME, message()) if raise?(data_structure_type)
+    (raise INTERFACE_NAME, message()) if acceptable?(data_structure_type)
   end
 
   private
@@ -38,20 +41,6 @@ class DataStructureErrorImpl < DataStructureError
   # the explanation. Otherwise, sets the message the default explanation.
   def message=(explanation)
     @message = choose(explanation)
-  end
-
-  # raise?(presumed_acceptable).
-  # @abstract:
-  # Boolean method. In the case the argument is an unacceptable type, returns
-  # true. Otherwise, returns false.
-  # @param presumed_acceptable: an object, presumed acceptable.
-  def raise?(presumed_acceptable)
-
-    class_name            = presumed_acceptable.class().to_s()
-    symbolized_class_name = class_name.to_sym()
-    acceptable_core_ds    = DataStructureErrorImpl::ACCEPTABLE_C_TYPES
-    return (!acceptable_core_ds.include?(symbolized_class_name))
-
   end
 
 end
