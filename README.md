@@ -2,14 +2,14 @@
 
 Implements and subclasses the `DataStructureError`
 class interface. There are three `public` instance methods, one `private` 
-instance method, and one helper method.
+instance method, and two helper methods.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'data_structure_error_impl', `~> 1.2.0`
+gem 'data_structure_error_impl', `~> 1.3.0`
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install data_structure_error_impl -v 1.2.0
+    $ gem install data_structure_error_impl -v 1.3.0
 
 ## Usage
 
@@ -52,6 +52,12 @@ explanation. Otherwise, sets the message the `DEFAULT_MESSAGE`.
 
 Boolean method. In the case the argument is an unacceptable type, returns 
 `true`. Otherwise, returns `false`. Takes a presumed acceptable object.
+
+#### `choose(explanation)`
+
+In the case the argument is `nil` or any type excluding `String`, returns the 
+`DEFAULT_MESSAGE`. Otherwise, returns the argument. The entire 
+`ArgumentTypeError` family calls the method in the message attribute setter.
 
 ## Development
 

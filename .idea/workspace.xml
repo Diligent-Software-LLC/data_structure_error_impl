@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a39ba04-0cec-4b55-9229-bf6299fcef07" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_structure_error_impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_structure_error_impl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_structure_error_impl.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/data_structure_error_impl.gemspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data_structure_error_impl.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_structure_error_impl.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data_structure_error_impl/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_structure_error_impl/version.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data_structure_error_impl_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_structure_error_impl_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data_structure_error_impl_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/data_structure_error_impl_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +29,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
@@ -90,7 +96,8 @@
       <updated>1574007990902</updated>
       <workItem from="1574007992475" duration="12240000" />
       <workItem from="1575233692607" duration="799000" />
-      <workItem from="1576082555565" duration="610000" />
+      <workItem from="1576082555565" duration="729000" />
+      <workItem from="1576151537489" duration="2736000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized repository and typed version 1.0.0.">
       <created>1574023662398</created>
@@ -148,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575234394628</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed architectural problems.">
+      <created>1576083191388</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1576083191388</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,28 +189,33 @@
     <MESSAGE value="Completed README and fixed file bugs." />
     <MESSAGE value="Added badges." />
     <MESSAGE value="Fixed architectural problems, updated README, and all tests pass." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed architectural problems, updated README, and all tests pass." />
+    <MESSAGE value="Fixed architectural problems." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed architectural problems." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1413" height="270" key="GridCell.Tab.0.bottom" timestamp="1576083131282">
+    <state x="287" y="112" key="CommitChangelistDialog2" timestamp="1576083191000">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1576083131282" />
-    <state width="1413" height="270" key="GridCell.Tab.0.center" timestamp="1576083131280">
+    <state x="287" y="112" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1576083191000" />
+    <state width="1413" height="270" key="GridCell.Tab.0.bottom" timestamp="1576178775276">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1576083131280" />
-    <state width="1413" height="270" key="GridCell.Tab.0.left" timestamp="1576083131279">
+    <state width="1413" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1576178775276" />
+    <state width="1413" height="270" key="GridCell.Tab.0.center" timestamp="1576178775274">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1576083131279" />
-    <state width="1413" height="270" key="GridCell.Tab.0.right" timestamp="1576083131281">
+    <state width="1413" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1576178775274" />
+    <state width="1413" height="270" key="GridCell.Tab.0.left" timestamp="1576178775273">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1576083131281" />
+    <state width="1413" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1576178775273" />
+    <state width="1413" height="270" key="GridCell.Tab.0.right" timestamp="1576178775275">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state width="1413" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1576178775275" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/data_structure_error_impl@DataStructureErrorImplTest.rcov" NAME="DataStructureErrorImplTest Coverage Results" MODIFIED="1576083127110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="data_structure_error_impl" />
+    <SUITE FILE_PATH="coverage/data_structure_error_impl@DataStructureErrorImplTest.rcov" NAME="DataStructureErrorImplTest Coverage Results" MODIFIED="1576152870229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="data_structure_error_impl" />
   </component>
 </project>

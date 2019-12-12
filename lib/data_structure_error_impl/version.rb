@@ -1,7 +1,7 @@
 # Copyright (C) 2019 Diligent Software LLC. All rights reserved. Released
 # under the MIT License.
 require 'data_structure_error'
-require 'argument_type_error_helper'
+require 'data_structure_error_impl_helper'
 
 # DataStructureErrorImpl.
 # @abstract:
@@ -9,8 +9,11 @@ require 'argument_type_error_helper'
 # @attribute message: refer interface.
 class DataStructureErrorImpl < DataStructureError
 
-  include ArgumentTypeErrorHelper
+  include DataStructureErrorImplHelper
 
-  VERSION = "1.2.0"
+  DEFAULT_MESSAGE = "The argued type is unacceptable. Refer " +
+      "the documentation."
+
+  VERSION = "1.3.0"
 
 end

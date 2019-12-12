@@ -5,7 +5,9 @@ require "test_helper"
 # Tests the DataStructureErrorImpl class.
 class DataStructureErrorImplTest < Minitest::Test
 
-  TEST_MESSAGE         = "Test."
+  include DataStructureErrorImplHelper
+
+  TEST_MESSAGE = "Test."
 
   # setup().
   # @abstract:
@@ -20,6 +22,28 @@ class DataStructureErrorImplTest < Minitest::Test
   # Tests the version number was defined.
   def test_that_it_has_a_version_number()
     refute_nil ::DataStructureErrorImpl::VERSION
+  end
+
+  # test_nil_argument_returns_default().
+  # @abstract:
+  # A nil argument returns the DEFAULT_MESSAGE.
+  def test_nil_argument_returns_default()
+
+    argument      = nil
+    return_object = choose(argument)
+    assert_equal(DataStructureErrorImpl::DEFAULT_MESSAGE, return_object)
+
+  end
+
+  # test_string_argument_returns_string_argument().
+  # @abstract:
+  # A String argument returns the same String argument.
+  def test_string_argument_returns_string_argument()
+
+    argument = ''
+    choice   = choose(argument)
+    assert_equal(argument, choice)
+
   end
 
   # test_test_message_initialized().

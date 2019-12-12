@@ -1,12 +1,10 @@
 require "data_structure_error_impl/version"
-require 'data_structure_error_impl_helper'
 
 class DataStructureErrorImpl < DataStructureError
 
   ACCEPTABLE_C_TYPES = [:Array, :Hash, :Queue, :SizedQueue, :Struct]
   INTERFACE_NAME     = superclass()
 
-  include DataStructureErrorImplHelper
 
   # initialize(message_argument = nil).
   # @abstract:
