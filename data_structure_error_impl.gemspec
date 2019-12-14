@@ -42,6 +42,6 @@ instance method, and two helper methods.}
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
 
-  spec.add_dependency 'data_structure_error', '~> 1.0.1'
+  spec.add_dependency 'data_structure_error', '~> 1.1.0'
 
 end

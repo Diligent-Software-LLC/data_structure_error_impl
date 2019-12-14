@@ -1,15 +1,16 @@
 # DataStructureErrorImpl [![Gem Version](https://badge.fury.io/rb/data_structure_error_impl.svg)](https://badge.fury.io/rb/data_structure_error_impl) ![Gem](https://img.shields.io/gem/dt/data_structure_error_impl)
 
 Implements and subclasses the `DataStructureError`
-class interface. There are three `public` instance methods, one `private` 
-instance method, and two helper methods.
+class interface. There are four `public` methods, one `private` 
+method, and two helper methods. Four `public` methods are instance methods, 
+and one is a class method.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'data_structure_error_impl', `~> 1.3.0`
+gem 'data_structure_error_impl', `~> 1.4.0`
 ```
 
 And then execute:
@@ -18,13 +19,34 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install data_structure_error_impl -v 1.3.0
+    $ gem install data_structure_error_impl -v 1.4.0
 
 ## Usage
 
-### Public instance methods
-The three `public` instance methods are the constructor, `message()`, and 
-`raise_exception(data_structure_type)`.
+### Constants
+
+- DEFAULT_MESSAGE
+
+The default error message in the case an error raises.
+
+- ACCEPTABLE_C_TYPES
+
+An array containing acceptable core data structure types. The type names are 
+symbols. The acceptable types are Ruby Core's Array, Hash, Queue, SizedQueue, 
+and Struct types.
+
+- INTERFACE_NAME
+
+The superclass name. 
+
+### Public methods
+The four `public` methods are `self.acceptable?(argument_o)`, the constructor, 
+`message()`, and `raise_exception(data_structure_type)`.
+
+#### `self.acceptable?(argument_o)`
+
+Class method. Verifies the argument is an acceptable data structure. Returns 
+`true` in the case the argument's type is acceptable, and `false` otherwise.
 
 #### `initialize(message_argument = nil)`
 The constructor. The message attribute defaults the `DEFAULT_MESSAGE`.
@@ -48,10 +70,11 @@ explanation. Otherwise, sets the message the `DEFAULT_MESSAGE`.
 
 ### Helper methods
 
-#### `acceptable?(argument_object)`
+#### `convert_obj_sym(argument_object)`
 
-Boolean method. In the case the argument is an unacceptable type, returns 
-`true`. Otherwise, returns `false`. Takes a presumed acceptable object.
+Takes an object or value and converts its class name. Before calling the 
+method, an object or value exists. After exiting the method's scope, the 
+caller receives the argument's class name, symbolized.
 
 #### `choose(explanation)`
 

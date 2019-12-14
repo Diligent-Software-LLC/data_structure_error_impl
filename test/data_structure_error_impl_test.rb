@@ -15,6 +15,7 @@ class DataStructureErrorImplTest < Minitest::Test
   def setup()
     @test_message_initialized = DataStructureErrorImpl.new(TEST_MESSAGE)
     @default_initialized      = DataStructureErrorImpl.new()
+    @nil_argument = nil
   end
 
   # test_that_it_has_a_version_number().
@@ -66,11 +67,26 @@ class DataStructureErrorImplTest < Minitest::Test
   # An unacceptable data structure argument raises an error.
   def test_unacceptable_type_raises()
 
-    unacceptable         = 0
+    unacceptable = 0
     assert_raises (DataStructureErrorImpl::INTERFACE_NAME) {
       @default_initialized.raise_exception(unacceptable)
     }
 
+  end
+
+  # test_nil_is_unacceptable_ds().
+  # @abstract:
+  # A nil argument is unacceptable.
+  def test_nil_is_unacceptable_ds()
+    refute(DataStructureErrorImpl.acceptable?(@nil_argument))
+  end
+
+  # test_object_sym_conversion().
+  # @abstract:
+  # The conversion helper method appropriately converts.
+  def test_object_sym_conversion()
+    conversion = convert_obj_sym(@nil_argument)
+    assert_equal(:NilClass, conversion)
   end
 
 end

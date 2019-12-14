@@ -10,10 +10,8 @@ require 'data_structure_error_impl_helper'
 class DataStructureErrorImpl < DataStructureError
 
   include DataStructureErrorImplHelper
+  extend DataStructureErrorImplHelper
 
-  DEFAULT_MESSAGE = "The argued type is unacceptable. Refer " +
-      "the documentation."
-
-  VERSION = "1.3.0"
+  VERSION = "1.4.0"
 
 end
