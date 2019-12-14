@@ -10,7 +10,7 @@ and one is a class method.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'data_structure_error_impl', `~> 1.4.0`
+gem 'data_structure_error_impl', `~> 1.4.1`
 ```
 
 And then execute:
@@ -19,7 +19,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install data_structure_error_impl -v 1.4.0
+    $ gem install data_structure_error_impl -v 1.4.1
 
 ## Usage
 
@@ -32,8 +32,7 @@ The default error message in the case an error raises.
 - ACCEPTABLE_C_TYPES
 
 An array containing acceptable core data structure types. The type names are 
-symbols. The acceptable types are Ruby Core's Array, Hash, Queue, SizedQueue, 
-and Struct types.
+symbols. The acceptable types are Ruby Core's Array and Hash types.
 
 - INTERFACE_NAME
 

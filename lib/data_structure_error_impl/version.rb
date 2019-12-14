@@ -12,6 +12,6 @@ class DataStructureErrorImpl < DataStructureError
   include DataStructureErrorImplHelper
   extend DataStructureErrorImplHelper
 
-  VERSION = "1.4.0"
+  VERSION = "1.4.1"
 
 end
