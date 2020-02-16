@@ -1,4 +1,4 @@
-# Copyright (C) 2019 Diligent Software LLC. All rights reserved. Released
+# Copyright (C) 2020 Diligent Software LLC. All rights reserved. Released
 # under the MIT License.
 require 'data_structure_error'
 require 'data_structure_error_impl_helper'
@@ -12,6 +12,6 @@ class DataStructureErrorImpl < DataStructureError
   include DataStructureErrorImplHelper
   extend DataStructureErrorImplHelper
 
-  VERSION = "1.4.1"
+  VERSION = '1.4.2'.freeze
 
 end

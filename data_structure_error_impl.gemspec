@@ -13,7 +13,8 @@ class interface.}
   spec.description = %q{Implements and subclasses the DataStructureError
 class interface. There are three public instance methods, one private
 instance method, and two helper methods.}
-  spec.homepage    = "https://github.com/scientist8202/data_structure_error_impl"
+  spec.homepage    = "https://github" +
+      ".com/Diligent-Software-LLC/data_structure_error_impl"
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -38,10 +39,11 @@ instance method, and two helper methods.}
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.17"
+  spec.add_development_dependency "bundler", "~> 2.1.2"
+  spec.add_development_dependency "simplecov", "~> 0.17.1"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
 
-  spec.add_dependency 'data_structure_error', '~> 1.1.0'
+  spec.add_dependency "data_structure_error", "~> 1.1.1"
 
 end

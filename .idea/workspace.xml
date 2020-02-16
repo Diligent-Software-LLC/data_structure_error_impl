@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+    <option name="SCOPE_TYPE" value="10" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8a39ba04-0cec-4b55-9229-bf6299fcef07" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_structure_error_impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_structure_error_impl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_structure_error_impl.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/data_structure_error_impl.gemspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data_structure_error_impl.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_structure_error_impl.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data_structure_error_impl/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_structure_error_impl/version.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data_structure_error_impl_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_structure_error_impl_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +36,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -94,7 +104,8 @@
       <workItem from="1576082555565" duration="729000" />
       <workItem from="1576151537489" duration="2822000" />
       <workItem from="1576358275469" duration="2543000" />
-      <workItem from="1576366376286" duration="460000" />
+      <workItem from="1576366376286" duration="563000" />
+      <workItem from="1581871673423" duration="1882000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized repository and typed version 1.0.0.">
       <created>1574023662398</created>
@@ -173,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576362221499</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed bug. Not all acceptable structures were acceptable. Fixed the acceptable types.">
+      <created>1576366878480</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1576366878480</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,36 +221,41 @@
     <MESSAGE value="Fixed architectural problems." />
     <MESSAGE value="All tests pass. Also fixed gemspec dependency versioning." />
     <MESSAGE value="All tests pass. Fixed dependency versioning. Fixed a few bugs. Refactored." />
-    <option name="LAST_COMMIT_MESSAGE" value="All tests pass. Fixed dependency versioning. Fixed a few bugs. Refactored." />
+    <MESSAGE value="Fixed bug. Not all acceptable structures were acceptable. Fixed the acceptable types." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug. Not all acceptable structures were acceptable. Fixed the acceptable types." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="287" y="112" key="CommitChangelistDialog2" timestamp="1576362221152">
+    <state x="471" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581874093802">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="287" y="112" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1576362221152" />
-    <state width="1413" height="270" key="GridCell.Tab.0.bottom" timestamp="1576362346374">
+    <state x="471" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.975@0.23.1680.975" timestamp="1581874093802" />
+    <state x="287" y="112" key="CommitChangelistDialog2" timestamp="1576366878166">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1576362346374" />
-    <state width="1413" height="270" key="GridCell.Tab.0.center" timestamp="1576362346372">
+    <state x="287" y="112" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1576366878166" />
+    <state width="1413" height="270" key="GridCell.Tab.0.bottom" timestamp="1581874043704">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1576362346372" />
-    <state width="1413" height="270" key="GridCell.Tab.0.left" timestamp="1576362346371">
+    <state width="1413" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1581874043704" />
+    <state width="1413" height="270" key="GridCell.Tab.0.center" timestamp="1581874043702">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1576362346371" />
-    <state width="1413" height="270" key="GridCell.Tab.0.right" timestamp="1576362346373">
+    <state width="1413" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1581874043702" />
+    <state width="1413" height="270" key="GridCell.Tab.0.left" timestamp="1581874043700">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1576362346373" />
-    <state x="326" y="250" key="Vcs.Push.Dialog.v2" timestamp="1576362336573">
+    <state width="1413" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1581874043700" />
+    <state width="1413" height="270" key="GridCell.Tab.0.right" timestamp="1581874043703">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="326" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1576362336573" />
+    <state width="1413" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1581874043703" />
+    <state x="326" y="250" key="Vcs.Push.Dialog.v2" timestamp="1576366884857">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="326" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1576366884857" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/data_structure_error_impl@DataStructureErrorImplTest.rcov" NAME="DataStructureErrorImplTest Coverage Results" MODIFIED="1576359022548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="data_structure_error_impl" />
+    <SUITE FILE_PATH="coverage/data_structure_error_impl@DataStructureErrorImplTest.rcov" NAME="DataStructureErrorImplTest Coverage Results" MODIFIED="1581874039395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="data_structure_error_impl" />
   </component>
 </project>
