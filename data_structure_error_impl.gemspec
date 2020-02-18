@@ -1,10 +1,12 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "data_structure_error_impl/version"
+
+VERSION = '1.4.3'.freeze
 
 Gem::Specification.new do |spec|
+
   spec.name    = "data_structure_error_impl"
-  spec.version = DataStructureErrorImpl::VERSION
+  spec.version = VERSION
   spec.authors = ["Bradley J. Tannor", "Diligent Software LLC"]
   spec.email   = ["bradleytannor@gmail.com"]
 
@@ -44,6 +46,6 @@ instance method, and two helper methods.}
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
 
-  spec.add_dependency "data_structure_error", "~> 1.1.1"
+  spec.add_dependency "data_structure_error", "~> 1.1.3"
 
 end

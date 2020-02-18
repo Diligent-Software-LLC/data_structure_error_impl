@@ -10,7 +10,7 @@ and one is a class method.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "data_structure_error_impl", "~> 1.4.2"
+gem "data_structure_error_impl", "~> 1.4.3"
 ```
 
 And then execute:
@@ -19,7 +19,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install data_structure_error_impl -v 1.4.2
+    $ gem install data_structure_error_impl -v 1.4.3
 
 ## Usage
 
