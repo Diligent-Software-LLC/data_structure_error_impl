@@ -8,7 +8,7 @@ class DataStructureErrorImpl < DataStructureError
   DEFAULT_MESSAGE    = "The argued type is unacceptable. Refer " +
       "the documentation."
   ACCEPTABLE_C_TYPES = [:Array, :Hash]
-  INTERFACE_NAME = superclass().to_s()
+  INTERFACE = superclass().to_s()
 
   # self.acceptable?(argument_o).
   # @abstract:

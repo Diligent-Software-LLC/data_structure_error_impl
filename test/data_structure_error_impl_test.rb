@@ -68,7 +68,7 @@ class DataStructureErrorImplTest < Minitest::Test
   def test_unacceptable_type_raises()
 
     unacceptable = 0
-    assert_raises (DataStructureErrorImpl::INTERFACE_NAME) {
+    assert_raises (DataStructureErrorImpl::INTERFACE) {
       @default_initialized.raise_exception(unacceptable)
     }
 
