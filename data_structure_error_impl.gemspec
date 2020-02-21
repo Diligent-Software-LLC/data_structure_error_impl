@@ -1,7 +1,7 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-VERSION = '1.4.3'.freeze
+VERSION = '1.4.4'.freeze
 
 Gem::Specification.new do |spec|
 
