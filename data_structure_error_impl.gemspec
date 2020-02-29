@@ -43,7 +43,7 @@ instance method, and two helper methods.}
 
   spec.add_development_dependency "bundler", "~> 2.1.2"
   spec.add_development_dependency "simplecov", "~> 0.17.1"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", "~> 12.3"
   spec.add_development_dependency "minitest", "~> 5.0"
 
   spec.add_dependency "data_structure_error", "~> 1.1.3"
