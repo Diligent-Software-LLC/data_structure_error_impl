@@ -5,9 +5,14 @@
     <option name="SCOPE_TYPE" value="10" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a39ba04-0cec-4b55-9229-bf6299fcef07" name="Default Changelist" comment="All Local Tests Pass.&#10;&#10;The INTERFACE_NAME constant was inconsistent.">
+    <list default="true" id="8a39ba04-0cec-4b55-9229-bf6299fcef07" name="Default Changelist" comment="Setup Complete&#10;&#10;Adjusted code of conduct contact information, gemspec attributes and depdendencies, copyright information, and updated README.md version">
+      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_structure_error_impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_structure_error_impl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_structure_error_impl.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/data_structure_error_impl.gemspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +26,11 @@
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -38,6 +48,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/artifacts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="DataStructureErrorImplTest" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
@@ -106,7 +121,8 @@
       <workItem from="1576366376286" duration="563000" />
       <workItem from="1581871673423" duration="2387000" />
       <workItem from="1582065345354" duration="3109000" />
-      <workItem from="1582308956321" duration="146000" />
+      <workItem from="1582308956321" duration="344000" />
+      <workItem from="1583366034128" duration="2530000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized repository and typed version 1.0.0.">
       <created>1574023662398</created>
@@ -213,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582309056119</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="All Local Tests Pass.&#10;&#10;The INTERFACE_NAME constant was inconsistent.">
+      <created>1582309124804</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1582309124804</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,10 +278,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="471" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.975@0.23.1680.975" timestamp="1581874093802" />
-    <state x="287" y="112" key="CommitChangelistDialog2" timestamp="1582309101269">
+    <state x="287" y="112" key="CommitChangelistDialog2" timestamp="1583413624376">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="287" y="112" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1582309101269" />
+    <state x="287" y="112" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1583413624376" />
     <state width="1413" height="270" key="GridCell.Tab.0.bottom" timestamp="1582309115389">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -279,10 +302,14 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="236" y="149" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1582065362105" />
-    <state x="326" y="250" key="Vcs.Push.Dialog.v2" timestamp="1582309070334">
+    <state x="326" y="250" key="Vcs.Push.Dialog.v2" timestamp="1582309222794">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="326" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1582309070334" />
+    <state x="326" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1582309222794" />
+    <state x="498" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1583413650778">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="498" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1583413650778" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/data_structure_error_impl@DataStructureErrorImplTest.rcov" NAME="DataStructureErrorImplTest Coverage Results" MODIFIED="1582309005503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="data_structure_error_impl" />

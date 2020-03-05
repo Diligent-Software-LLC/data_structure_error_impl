@@ -1,36 +1,31 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-VERSION = '1.4.4'.freeze
+VERSION = '1.4.5'.freeze
 
 Gem::Specification.new do |spec|
 
+  # Required attributes
   spec.name    = "data_structure_error_impl"
   spec.version = VERSION
   spec.authors = ["Bradley J. Tannor", "Diligent Software LLC"]
   spec.email   = ["bradleytannor@gmail.com"]
 
-  spec.summary     = %q{Implements and subclasses the DataStructureError
-class interface.}
-  spec.description = %q{Implements and subclasses the DataStructureError
-class interface. There are three public instance methods, one private
-instance method, and two helper methods.}
-  spec.homepage    = "https://github" +
-      ".com/Diligent-Software-LLC/data_structure_error_impl"
+  spec.summary     = %q{Implements the DataStructureError interface.}
+  spec.description = %q{Implements the DataStructureError interface.
+Categorizes Ruby Core data structure types. Implements a corresponding
+DataStructureError exception class.}
+  spec.homepage    = 'https://www.docs.diligentsoftware.org/' +
+      'datastructureerror/implementation'
   spec.license     = "MIT"
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  # if spec.respond_to?(:metadata)
-  #   spec.metadata["allowed_push_host"] = " Set to 'http://mygemserver.com'"
-  #
-  #   spec.metadata["homepage_uri"] = spec.homepage
-  #   spec.metadata["source_code_uri"] = " Put your gem's public repo URL here."
-  #   spec.metadata["changelog_uri"] = " Put your gem's CHANGELOG.md URL here."
-  # else
-  #   raise "RubyGems 2.0 or newer is required to protect against " \
-  #     "public gem pushes."
-  # end
+  # Optional attributes
+  spec.required_ruby_version       = '>= 2.6.5'
+  spec.metadata["homepage_uri"]    = spec.homepage
+  spec.metadata["source_code_uri"] = 'https://www.github' +
+      '.com/Diligent-Software-LLC/data_structure_error_impl'
+  spec.metadata["changelog_uri"]   = 'https://www.docs.diligentsoftware' +
+      '.org/datastructureerror/changelog'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -41,11 +36,13 @@ instance method, and two helper methods.}
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  # Development and testing dependencies
   spec.add_development_dependency "bundler", "~> 2.1.2"
   spec.add_development_dependency "simplecov", "~> 0.17.1"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "minitest", "~> 5.0"
 
-  spec.add_dependency "data_structure_error", "~> 1.1.3"
+  # Gem specific runtime dependencies
+  spec.add_dependency "data_structure_error", "~> 1.1.4"
 
 end
