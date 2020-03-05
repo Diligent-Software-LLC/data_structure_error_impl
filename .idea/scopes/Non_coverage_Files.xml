@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Non-coverage Files" pattern="file[data_structure_error_impl]:artifacts/*||file[data_structure_error_impl]:bin/*||file[data_structure_error_impl]:lib/*||file[data_structure_error_impl]:test/*||file:.gitignore||file:.travis.yml||file:CODE_OF_CONDUCT.md||file:data_structure_error_impl.gemspec||file:Gemfile||file:Gemfile.lock||file:LICENSE.txt||file:Rakefile||file:README.md" />
+</component>

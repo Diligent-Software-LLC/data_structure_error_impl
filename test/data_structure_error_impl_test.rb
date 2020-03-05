@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 # DataStructureErrorImplTest.
 # @abstract:
@@ -7,7 +7,7 @@ class DataStructureErrorImplTest < Minitest::Test
 
   include DataStructureErrorImplHelper
 
-  TEST_MESSAGE = "Test."
+  TEST_MESSAGE = 'Test.'.freeze
 
   # setup().
   # @abstract:
@@ -15,7 +15,6 @@ class DataStructureErrorImplTest < Minitest::Test
   def setup()
     @test_message_initialized = DataStructureErrorImpl.new(TEST_MESSAGE)
     @default_initialized      = DataStructureErrorImpl.new()
-    @nil_argument             = nil
   end
 
   # teardown().
@@ -31,10 +30,10 @@ class DataStructureErrorImplTest < Minitest::Test
     refute_nil ::DataStructureErrorImpl::VERSION
   end
 
-  # test_nil_argument_returns_default().
+  # test_choose_nil_returns_default().
   # @abstract:
   # A nil argument returns the DEFAULT_MESSAGE.
-  def test_nil_argument_returns_default()
+  def test_choose_nil_returns_default()
 
     argument      = nil
     return_object = choose(argument)
@@ -42,10 +41,10 @@ class DataStructureErrorImplTest < Minitest::Test
 
   end
 
-  # test_string_argument_returns_string_argument().
+  # test_choose_str_returns_str().
   # @abstract:
   # A String argument returns the same String argument.
-  def test_string_argument_returns_string_argument()
+  def test_choose_str_returns_str()
 
     argument = ''
     choice   = choose(argument)
@@ -74,7 +73,7 @@ class DataStructureErrorImplTest < Minitest::Test
   def test_unacceptable_type_raises()
 
     unacceptable = 0
-    assert_raises (DataStructureErrorImpl::INTERFACE) {
+    assert_raises(DataStructureErrorImpl::INTERFACE) {
       @default_initialized.raise_exception(unacceptable)
     }
 
@@ -91,11 +90,13 @@ class DataStructureErrorImplTest < Minitest::Test
   # @abstract
   # Conversion helper works.
   def test_object_type_conversion()
-    test_object      = nil
+
+  test_object      = nil
     test_object_type = test_object.class()
     stringified_type = test_object_type.to_s()
     conversion       = stringify_obj_type(test_object)
     assert_equal(stringified_type, conversion)
+
   end
 
 end

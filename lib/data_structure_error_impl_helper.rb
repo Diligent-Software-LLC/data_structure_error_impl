@@ -1,6 +1,10 @@
 # Copyright (C) 2020 Diligent Software LLC. All rights reserved. Released
 # under the MIT License.
 
+# DataStructureErrorImplHelper.
+# @abstract
+# Helper module. Extends DataStructureErrorImpl and DataStructureErrorImpl
+# instances.
 module DataStructureErrorImplHelper
 
   # stringify_obj_type(any_object).

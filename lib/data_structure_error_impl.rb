@@ -1,8 +1,11 @@
 # Copyright (C) 2020 Diligent Software LLC. All rights reserved. Released
 # under the MIT License.
 
-require "data_structure_error_impl/version"
+require 'data_structure_error_impl/version'
 
+# DataStructureErrorImpl < DataStructureError.
+# @abstract
+# DataStructureError implementation.
 class DataStructureErrorImpl < DataStructureError
 
   # self.acceptable?(any_object).
@@ -45,8 +48,11 @@ class DataStructureErrorImpl < DataStructureError
   # @param [Object] any_object
   # Any object.
   def raise_exception(any_object)
-    (raise INTERFACE, message()) unless DataStructureErrorImpl
-                                            .acceptable?(any_object)
+
+    unless (DataStructureErrorImpl.acceptable?(any_object))
+      raise INTERFACE, message()
+    end
+
   end
 
   private
