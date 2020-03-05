@@ -1,9 +1,14 @@
 # DataStructureErrorImpl [![Gem Version](https://badge.fury.io/rb/data_structure_error_impl.svg)](https://badge.fury.io/rb/data_structure_error_impl) ![Gem](https://img.shields.io/gem/dt/data_structure_error_impl)
 
-Implements and subclasses the `DataStructureError`
-class interface. There are four `public` methods, one `private` 
-method, and two helper methods. Four `public` methods are instance methods, 
-and one is a class method.
+Implements the [DataStructureError](https://github.com/Diligent-Software-LLC/data_structure_error) 
+interface. The DataStructureError library is a data structure error raising library.
+
+## Donate
+
+All donations, regardless of quantity, are helpful. Donations support longevity 
+and continuous improvement. Donate at the project's 
+[collective](https://opencollective.com/datastructureerror) page. Greatly
+ appreciated.
 
 ## Installation
 
@@ -15,101 +20,57 @@ gem "data_structure_error_impl", "~> 1.4.5"
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
     $ gem install data_structure_error_impl -v 1.4.5
+    
+** All versions <= 1.4.4 are unstable or incomplete **
 
-## Usage
+## Methods
 
-### Constants
-
-- DEFAULT_MESSAGE
-
-The default error message in the case an error raises.
-
-- ACCEPTABLE_C_TYPES
-
-An array containing acceptable core data structure types. The type names are 
-symbols. The acceptable types are Ruby Core's Array and Hash types.
-
-- INTERFACE_NAME
-
-The superclass name. 
-
-### Public methods
-The four `public` methods are `self.acceptable?(any_object)`, the constructor, 
-`message()`, and `raise_exception(data_structure_type)`.
-
-#### `self.acceptable?(any_object)`
+### `self.acceptable?(any_object)`
 
 Class method. Verifies the argument is an acceptable data structure. Returns 
 `true` in the case the argument's type is acceptable, and `false` otherwise.
 
-#### `initialize(message = DEFAULT_MESSAGE)`
+### `initialize(message = DEFAULT_MESSAGE)`
 The constructor. The message attribute defaults the `DEFAULT_MESSAGE`.
 
-#### `message()`
+### `message()`
 
 Getter method. Gets and returns the message attribute.
 
-#### `raise_exception(data_structure_type)`
+### `raise_exception(any_object)`
 
-In the case the argument is a data object or an unacceptable data structure, 
-raises. Takes an unknown type object.
+In the case the argument is an unacceptable data structure, raises. Takes any 
+object argument.
 
-### Private instance methods
-The private instance method is `message=(explanation)`.
+### `stringify_obj_type(any_object)`
 
-#### `message=(explanation)`
+Takes any argument and returns its stringified class name.
 
-Setter method. In the case the explanation is a `String`, sets the message the 
-explanation. Otherwise, sets the message the `DEFAULT_MESSAGE`.
-
-### Helper methods
-
-#### `stringify_obj_type(any_object)`
-
-Takes an object or value and converts its class name. Before calling the 
-method, an object or value exists. After exiting the method's scope, the 
-caller receives the argument's class name, symbolized.
-
-#### `choose(explanation)`
+### `choose(explanation)`
 
 In the case the argument is `nil` or any type excluding `String`, returns the 
-`DEFAULT_MESSAGE`. Otherwise, returns the argument. The entire 
-`ArgumentTypeError` family calls the method in the message attribute setter.
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, 
-run `rake test` to run the tests. You can also run `bin/console` for an 
-interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`.
-
-### Testing
-
-Unit and integration tested.
+`DEFAULT_MESSAGE`. Otherwise, returns the argument.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at 
-https://github.com/Diligent-Software-LLC/data_structure_error_impl. This project
- is 
-intended to be a safe, welcoming space for collaboration, and contributors are 
-expected to adhere to the 
-[Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Refer the [Bug Reporting](https://github.com/Diligent-Software-LLC/data_structure_error_impl/issues/3) 
+and the 
+[Bug Fixing](https://github.com/Diligent-Software-LLC/data_structure_error_impl/issues/4) 
+procedures.
+
+### Code of Conduct
+
+Everyone interacting in the DataStructureErrorImpl project’s codebases, issue 
+trackers, chat rooms and mailing lists is expected to follow the 
+[code of conduct](https://github.com/Diligent-Software-LLC/data_structure_error_impl/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
 Copyright (C) 2020 Diligent Software LLC. All rights reserved. Released under the MIT License.
 The gem is available as open source under the terms of the 
 [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the DataStructureErrorImpl project’s codebases, issue 
-trackers, chat rooms and mailing lists is expected to follow the 
-[code of conduct](https://github.com/Diligent-Software-LLC/data_structure_error_impl/blob/master/CODE_OF_CONDUCT.md).

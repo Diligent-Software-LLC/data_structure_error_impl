@@ -7,16 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a39ba04-0cec-4b55-9229-bf6299fcef07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/scopes/Non_coverage_Files.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/console" beforeDir="false" afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_structure_error_impl.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/data_structure_error_impl.gemspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data_structure_error_impl.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_structure_error_impl.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data_structure_error_impl_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_structure_error_impl_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/data_structure_error_impl_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/data_structure_error_impl_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +131,7 @@
       <workItem from="1582065345354" duration="3109000" />
       <workItem from="1582308956321" duration="344000" />
       <workItem from="1583366034128" duration="2530000" />
+      <workItem from="1583421737822" duration="1845000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized repository and typed version 1.0.0.">
       <created>1574023662398</created>
