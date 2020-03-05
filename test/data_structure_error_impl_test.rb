@@ -15,7 +15,13 @@ class DataStructureErrorImplTest < Minitest::Test
   def setup()
     @test_message_initialized = DataStructureErrorImpl.new(TEST_MESSAGE)
     @default_initialized      = DataStructureErrorImpl.new()
-    @nil_argument = nil
+    @nil_argument             = nil
+  end
+
+  # teardown().
+  # @abstract
+  # Cleans.
+  def teardown()
   end
 
   # test_that_it_has_a_version_number().
@@ -81,12 +87,15 @@ class DataStructureErrorImplTest < Minitest::Test
     refute(DataStructureErrorImpl.acceptable?(@nil_argument))
   end
 
-  # test_object_sym_conversion().
-  # @abstract:
-  # The conversion helper method appropriately converts.
-  def test_object_sym_conversion()
-    conversion = convert_obj_sym(@nil_argument)
-    assert_equal(:NilClass, conversion)
+  # test_object_type_conversion().
+  # @abstract
+  # Conversion helper works.
+  def test_object_type_conversion()
+    test_object      = nil
+    test_object_type = test_object.class()
+    stringified_type = test_object_type.to_s()
+    conversion       = stringify_obj_type(test_object)
+    assert_equal(stringified_type, conversion)
   end
 
 end

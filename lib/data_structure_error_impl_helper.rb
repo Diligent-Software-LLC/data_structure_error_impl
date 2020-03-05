@@ -3,17 +3,17 @@
 
 module DataStructureErrorImplHelper
 
-  # convert_obj_sym(argument_object).
+  # stringify_obj_type(any_object).
   # @abstract:
   # Takes an object or value and converts its class name.
   # @pre: an object or value exists.
   # @post: the argument's class name returns, symbolized.
-  # @param argument_object: an object or value.
-  def convert_obj_sym(argument_object)
+  # @param any_object: an object or value.
+  def stringify_obj_type(any_object)
 
-    object_class     = argument_object.class()
-    symbolized_class = object_class.to_s().to_sym()
-    return (symbolized_class)
+    object_class      = any_object.class()
+    stringified_class = object_class.to_s()
+    return stringified_class
 
   end
 

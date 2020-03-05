@@ -39,15 +39,15 @@ symbols. The acceptable types are Ruby Core's Array and Hash types.
 The superclass name. 
 
 ### Public methods
-The four `public` methods are `self.acceptable?(argument_o)`, the constructor, 
+The four `public` methods are `self.acceptable?(any_object)`, the constructor, 
 `message()`, and `raise_exception(data_structure_type)`.
 
-#### `self.acceptable?(argument_o)`
+#### `self.acceptable?(any_object)`
 
 Class method. Verifies the argument is an acceptable data structure. Returns 
 `true` in the case the argument's type is acceptable, and `false` otherwise.
 
-#### `initialize(message_argument = nil)`
+#### `initialize(message = DEFAULT_MESSAGE)`
 The constructor. The message attribute defaults the `DEFAULT_MESSAGE`.
 
 #### `message()`
@@ -69,7 +69,7 @@ explanation. Otherwise, sets the message the `DEFAULT_MESSAGE`.
 
 ### Helper methods
 
-#### `convert_obj_sym(argument_object)`
+#### `stringify_obj_type(any_object)`
 
 Takes an object or value and converts its class name. Before calling the 
 method, an object or value exists. After exiting the method's scope, the 
