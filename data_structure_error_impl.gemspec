@@ -1,11 +1,10 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-VERSION = '1.4.5'.freeze
+VERSION = '1.5.0'.freeze()
 
 Gem::Specification.new do |spec|
 
-  # Required attributes
   spec.name    = 'data_structure_error_impl'
   spec.version = VERSION
   spec.authors = ['Bradley J. Tannor', 'Diligent Software LLC']
@@ -13,14 +12,16 @@ Gem::Specification.new do |spec|
 
   spec.summary     = %q{Implements the DataStructureError interface.}
   spec.description = %q{Implements the DataStructureError interface.
-Categorizes Ruby Core data structure types. Implements a corresponding
-DataStructureError exception class.}
+Donations support continuous improvement and maintenance. The aim is a reliable,
+integrable, and endurable DataStructureError library. Make a donation at the
+project's collective page: https://opencollective.com/datastructureerror.
+One-time and recurring donations are available at $1, $2, $4, $8, and $16.
+Greatly appreciated.}
   spec.homepage    = 'https://www.docs.diligentsoftware.org/' +
       'datastructureerror/implementation'
   spec.license     = 'MIT'
-
-  # Optional attributes
   spec.required_ruby_version       = '>= 2.6.5'
+
   spec.metadata['homepage_uri']    = spec.homepage
   spec.metadata['source_code_uri'] = 'https://www.github' +
       '.com/Diligent-Software-LLC/data_structure_error_impl'
@@ -43,6 +44,6 @@ DataStructureError exception class.}
   spec.add_development_dependency 'minitest', '~> 5.0'
 
   # Gem specific runtime dependencies
-  spec.add_dependency 'data_structure_error', '~> 1.1.4'
+  spec.add_runtime_dependency 'data_structure_error', '~> 1.2.0'
 
 end

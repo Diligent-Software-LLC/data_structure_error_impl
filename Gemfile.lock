@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    data_structure_error_impl (1.4.5)
+    data_structure_error_impl (1.5.0)
       data_structure_error (~> 1.1.4)
 
 GEM
