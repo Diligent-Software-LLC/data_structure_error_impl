@@ -13,6 +13,6 @@ class DataStructureErrorImpl < DataStructureError
   include DataStructureErrorImplHelper
   extend DataStructureErrorImplHelper
 
-  VERSION = ::VERSION
+  VERSION = '1.5.1'.freeze()
 
 end
