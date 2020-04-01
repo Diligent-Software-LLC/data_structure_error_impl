@@ -39,19 +39,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a39ba04-0cec-4b55-9229-bf6299fcef07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_structure_error_impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_structure_error_impl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_structure_error_impl.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/data_structure_error_impl.gemspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data_structure_error_impl.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_structure_error_impl.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data_structure_error_impl/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_structure_error_impl/version.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data_structure_error_impl_helper.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/data_structure_error_impl_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/data_structure_error_impl_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Changelog.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +179,7 @@
       <workItem from="1584360802580" duration="4923000" />
       <workItem from="1585671195450" duration="694000" />
       <workItem from="1585672150649" duration="45000" />
-      <workItem from="1585758358484" duration="3961000" />
+      <workItem from="1585758358484" duration="4901000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized repository and typed version 1.0.0.">
       <created>1574023662398</created>
@@ -347,10 +335,17 @@
       <option name="project" value="LOCAL" />
       <updated>1585671871433</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Development Complete&#10;&#10;Rewrote the version.rb file. Rewrote the data_structure_error_impl.rb file. Deleted the data_structure_error_impl_helper.rb file and its references. Rewrote the data_structure_error_impl_test.rb file. Fixed 'require' statements. Rewrote the Gem Specification. Moved the rake and minitest dependencies. Added the GNU General Public License, version 3. Minor README.md editions. README formatting. Added a .yardopts file.">
+      <created>1585763025101</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1585763025101</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
-        <option name="defaultSearch" value="project: DataStructure Component: Error Sprints: 4 #Development " />
+        <option name="defaultSearch" value="project: DataStructure Component: Error Sprints: 4 #{Prepare Deploy}   " />
         <username>admin</username>
       </YouTrack>
     </servers>
@@ -393,7 +388,8 @@
     <MESSAGE value="Added Changelog&#10;&#10;Logged updates." />
     <MESSAGE value="Fixed Load Bug&#10;&#10;Version was defined in the Gem Specification. Loading files outside the library raises errors." />
     <MESSAGE value="Updated Changelog.md&#10;&#10;Fixed loading bug." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Changelog.md&#10;&#10;Fixed loading bug." />
+    <MESSAGE value="Development Complete&#10;&#10;Rewrote the version.rb file. Rewrote the data_structure_error_impl.rb file. Deleted the data_structure_error_impl_helper.rb file and its references. Rewrote the data_structure_error_impl_test.rb file. Fixed 'require' statements. Rewrote the Gem Specification. Moved the rake and minitest dependencies. Added the GNU General Public License, version 3. Minor README.md editions. README formatting. Added a .yardopts file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Development Complete&#10;&#10;Rewrote the version.rb file. Rewrote the data_structure_error_impl.rb file. Deleted the data_structure_error_impl_helper.rb file and its references. Rewrote the data_structure_error_impl_test.rb file. Fixed 'require' statements. Rewrote the Gem Specification. Moved the rake and minitest dependencies. Added the GNU General Public License, version 3. Minor README.md editions. README formatting. Added a .yardopts file." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -405,10 +401,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="471" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.975@0.23.1680.975" timestamp="1583420764014" />
-    <state x="203" y="23" width="1247" height="974" key="CommitChangelistDialog2" timestamp="1585671871135">
+    <state x="222" y="23" width="1247" height="974" key="CommitChangelistDialog2" timestamp="1585763024649">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="203" y="23" width="1247" height="974" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1585671871135" />
+    <state x="222" y="23" width="1247" height="974" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1585763024649" />
     <state x="148" y="123" width="1367" height="774" key="DiffContextDialog" timestamp="1584365904927">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
