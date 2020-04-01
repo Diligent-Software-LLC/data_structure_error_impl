@@ -1,102 +1,101 @@
-require 'test_helper'
+require_relative 'test_helper'
 
-# DataStructureErrorImplTest.
-# @abstract:
-# Tests the DataStructureErrorImpl class.
-class DataStructureErrorImplTest < Minitest::Test
+# DataStructureErrorTest.
+# @class_description
+#   Tests the DataStructureError implementation.
+class DataStructureErrorTest < Minitest::Test
 
-  include DataStructureErrorImplHelper
+  CLASS = DataStructureError
 
-  TEST_MESSAGE = 'Test.'.freeze
+  # test_conf_doc_f_ex().
+  # @description
+  #  The .travis.yml, CODE_OF_CONDUCT.md, Gemfile, LICENSE.txt, and
+  #  README.md files exist.
+  def test_conf_doc_f_ex()
+
+    assert_path_exists('.travis.yml')
+    assert_path_exists('CODE_OF_CONDUCT.md')
+    assert_path_exists('Gemfile')
+    assert_path_exists('LICENSE.txt')
+    assert_path_exists('README.md')
+
+  end
+
+  # test_version_declared().
+  # @description
+  #   The version was declared.
+  def test_version_declared()
+    refute_nil(CLASS::VERSION)
+  end
 
   # setup().
-  # @abstract:
-  # Prepare the tests.
+  # @description
+  #   Prepare the tests.
   def setup()
-    @test_message_initialized = DataStructureErrorImpl.new(TEST_MESSAGE)
-    @default_initialized      = DataStructureErrorImpl.new()
-  end
 
-  # teardown().
-  # @abstract
-  # Cleans.
-  def teardown()
-  end
-
-  # test_that_it_has_a_version_number().
-  # @abstract:
-  # Tests the version number was defined.
-  def test_that_it_has_a_version_number()
-    refute_nil ::DataStructureErrorImpl::VERSION
-  end
-
-  # test_choose_nil_returns_default().
-  # @abstract:
-  # A nil argument returns the DEFAULT_MESSAGE.
-  def test_choose_nil_returns_default()
-
-    argument      = nil
-    return_object = choose(argument)
-    assert_equal(DataStructureErrorImpl::DEFAULT_MESSAGE, return_object)
+    @x1_data_1 = 'Test.'
+    @x3_data_1 = 1
+    @x_data_1  = 'Test.'
 
   end
 
-  # test_choose_str_returns_str().
-  # @abstract:
-  # A String argument returns the same String argument.
-  def test_choose_str_returns_str()
+  # initialize(message = DEFAULT_MESSAGE)
 
-    argument = ''
-    choice   = choose(argument)
-    assert_equal(argument, choice)
+  # test_init_x1().
+  # @description
+  #   A String argument.
+  def test_init_x1()
+
+    error      = DataStructureError.new(@x1_data_1)
+    expected_1 = @x1_data_1
+    expected_2 = CLASS
+    assert_same(expected_1, error.message())
+    assert_same(expected_2, error.class())
 
   end
 
-  # test_test_message_initialized().
-  # @abstract:
-  # Test message initialized variables message attribute is the test message.
-  def test_test_message_initialized()
-    assert_equal(@test_message_initialized.message(), TEST_MESSAGE)
+  # test_init_x2().
+  # @description
+  #   No arguments.
+  def test_init_x2()
+
+    error      = DataStructureError.new()
+    expected_1 = CLASS
+    expected_2 = CLASS::DEFAULT_MESSAGE
+    assert_same(expected_1, error.class())
+    assert_same(expected_2, error.message())
+
   end
 
-  # test_default_initialized().
-  # @abstract:
-  # Default initialization's message attribute is the default message.
-  def test_default_initialized()
-    assert_equal(@default_initialized.message(),
-                 DataStructureErrorImpl::DEFAULT_MESSAGE)
-  end
+  # test_init_x3().
+  # @description
+  #   An invalid argument.
+  def test_init_x3()
 
-  # test_unacceptable_type_raises().
-  # @abstract:
-  # An unacceptable data structure argument raises an error.
-  def test_unacceptable_type_raises()
-
-    unacceptable = 0
-    assert_raises(DataStructureErrorImpl::INTERFACE) {
-      @default_initialized.raise_exception(unacceptable)
+    expected_1 = TypeError
+    assert_raises(expected_1) {
+      DataStructureError.new(@x3_data_1)
     }
 
   end
 
-  # test_nil_is_unacceptable_ds().
-  # @abstract:
-  # A nil argument is unacceptable.
-  def test_nil_is_unacceptable_ds()
-    refute(DataStructureErrorImpl.acceptable?(@nil_argument))
+  # message()
+
+  # test_m_x().
+  # @description
+  #   The returned message is the same String message was initialized.
+  def test_m_x()
+
+    error      = DataStructureError.new(@x_data_1)
+    expected_1 = @x_data_1
+    assert_same(expected_1, error.message())
+
   end
 
-  # test_object_type_conversion().
-  # @abstract
-  # Conversion helper works.
-  def test_object_type_conversion()
-
-  test_object      = nil
-    test_object_type = test_object.class()
-    stringified_type = test_object_type.to_s()
-    conversion       = stringify_obj_type(test_object)
-    assert_equal(stringified_type, conversion)
-
+  # teardown().
+  # @description
+  #   Cleans.
+  def teardown()
   end
 
 end

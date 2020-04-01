@@ -1,69 +1,53 @@
 # Copyright (C) 2020 Diligent Software LLC. All rights reserved. Released
-# under the MIT License.
+# under the GNU General Public License, Version 3. Refer LICENSE.txt.
 
-require 'data_structure_error_impl/version'
+require_relative 'data_structure_error_impl/version'
 
-# DataStructureErrorImpl < DataStructureError.
-# @abstract
-# DataStructureError implementation.
-class DataStructureErrorImpl < DataStructureError
+# DataStructureError.
+# @class_description
+#   DataStructureError implementation. Implements the DataStructureError
+#   interface.
+# @attr message [String]
+#   An error explanation.
+class DataStructureError < DataStructureErrorInt
 
-  # self.acceptable?(any_object).
-  # @abstract
-  # Class method. Verifies an object is an acceptable type.
-  # @param [Object] any_object
-  # Any object.
-  # @return [TrueClass, FalseClass] acceptable
-  # True in the case the type is acceptable. False otherwise.
-  def self.acceptable?(any_object)
-
-    conversion = stringify_obj_type(any_object)
-    acceptable = ACCEPTABLE_CORE_TYPES.include?(conversion)
-    return acceptable
-
-  end
-
-  # initialize(message = DEFAULT_MESSAGE)
-  # @abstract
-  # Constructor. The message attribute defaults DEFAULT_MESSAGE.
-  # @param [String] message
-  # An explanation error.
+  # initialize(message = DEFAULT_MESSAGE).
+  # @description
+  #   Initializes instances.
+  # @param message [String]
+  #   An error explanation.
+  # @return [DataStructureError]
+  #   An instance.
   def initialize(message = DEFAULT_MESSAGE)
     self.message = message
   end
 
   # message().
-  # @abstract
-  # Getter method. Gets the message attribute.
-  # @return [String] @message
-  # The message attribute.
+  # @description
+  #   Gets the message attribute's reference.
+  # @return [String]
+  #   Explanation.
   def message()
-    return @message
-  end
-
-  # raise_exception(any_object).
-  # @abstract
-  # In the case the argument is an unacceptable type, raises
-  # DataStructureError.
-  # @param [Object] any_object
-  # Any object.
-  def raise_exception(any_object)
-
-    unless (DataStructureErrorImpl.acceptable?(any_object))
-      raise INTERFACE, message()
-    end
-
+    return @message.freeze()
   end
 
   private
 
-  # message=(explanation).
-  # @abstract
-  # Setter. Sets the message attribute the explanation.
-  # @param [String] explanation
-  # An error explanation.
-  def message=(explanation)
-    @message = choose(explanation)
+  # message=(explanation = nil).
+  # @description
+  #   Sets the message attribute.
+  # @param explanation [String]
+  #   Error explanation.
+  # @raise [TypeError]
+  #   Arguing anything other than a String instance.
+  def message=(explanation = nil)
+
+    unless (explanation.instance_of?(String))
+      raise(TypeError, 'Error messages are Strings.')
+    else
+      @message = explanation
+    end
+
   end
 
 end
