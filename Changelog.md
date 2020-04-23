@@ -1,5 +1,22 @@
 # Changelog
 
+## v3.0.0, 2020-04-23
+
+### Added
+
+- A .yardopts file assertion.
+
+### Edited
+
+- Formatted Gem Specification.
+- Deleted runtime dependencies.
+- Updated development dependencies.
+- README.md's Installation and Documentation sections.
+
+### Fixed
+
+- Metadata Changelog URI.
+
 ## v2.0.0, 2020-04-01
 
 ### Added
