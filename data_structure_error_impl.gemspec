@@ -44,6 +44,6 @@ appreciated.}
   # Development and testing dependencies.
   spec.add_development_dependency 'bundler', '~> 2.1'
   spec.add_development_dependency 'simplecov', '~> 0'
-  spec.add_development_dependency 'data_structure_error_int', '~> 2'
+  spec.add_development_dependency 'data_structure_error_int', '~> 3'
 
 end

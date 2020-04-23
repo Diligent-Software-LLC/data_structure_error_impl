@@ -39,7 +39,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a39ba04-0cec-4b55-9229-bf6299fcef07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +183,7 @@
       <workItem from="1585672150649" duration="45000" />
       <workItem from="1585758358484" duration="6199000" />
       <workItem from="1585832856474" duration="1918000" />
-      <workItem from="1587608054850" duration="1880000" />
+      <workItem from="1587608054850" duration="2639000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized repository and typed version 1.0.0.">
       <created>1574023662398</created>
@@ -367,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587652880933</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Prepare Deployment&#10;&#10;Updated Changelog.md.">
+      <created>1587653128873</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1587653128874</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
         <option name="defaultSearch" value="project: DataStructure Subsystem: Error Component: Implementation Sprints: 6 State: { Prepare Deployment} " />
@@ -392,7 +399,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initialized repository and typed version 1.0.0." />
     <MESSAGE value="Formatted lines." />
     <MESSAGE value="All tests pass." />
     <MESSAGE value="Added some README documentation." />
@@ -417,7 +423,8 @@
     <MESSAGE value="Changelog Updated&#10;&#10;Described changes." />
     <MESSAGE value="Setup Complete&#10;&#10;Bumped Major Version. Formatted Gem Specification. Fixed metadata Changelog URI. Deleted runtime dependencies. Updated development dependencies. Updated README.md's Installation and Documentation sections." />
     <MESSAGE value="Development Complete&#10;&#10;Added a .yardopts file assertion." />
-    <option name="LAST_COMMIT_MESSAGE" value="Development Complete&#10;&#10;Added a .yardopts file assertion." />
+    <MESSAGE value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -429,30 +436,30 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="471" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.975@0.23.1680.975" timestamp="1583420764014" />
-    <state x="92" y="23" width="1489" height="974" key="CommitChangelistDialog2" timestamp="1587652880502">
+    <state x="92" y="23" width="1489" height="974" key="CommitChangelistDialog2" timestamp="1587661478750">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="92" y="23" width="1489" height="974" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1587652880502" />
+    <state x="92" y="23" width="1489" height="974" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1587661478750" />
     <state x="148" y="123" width="1367" height="774" key="DiffContextDialog" timestamp="1584365904927">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="148" y="123" width="1367" height="774" key="DiffContextDialog/0.23.1680.975@0.23.1680.975" timestamp="1584365904927" />
-    <state width="1525" height="270" key="GridCell.Tab.0.bottom" timestamp="1587652779411">
+    <state width="1525" height="270" key="GridCell.Tab.0.bottom" timestamp="1587661453603">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1525" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1587652779411" />
-    <state width="1525" height="270" key="GridCell.Tab.0.center" timestamp="1587652779410">
+    <state width="1525" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1587661453603" />
+    <state width="1525" height="270" key="GridCell.Tab.0.center" timestamp="1587661453602">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1525" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1587652779410" />
-    <state width="1525" height="270" key="GridCell.Tab.0.left" timestamp="1587652779409">
+    <state width="1525" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1587661453602" />
+    <state width="1525" height="270" key="GridCell.Tab.0.left" timestamp="1587661453601">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1525" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1587652779409" />
-    <state width="1525" height="270" key="GridCell.Tab.0.right" timestamp="1587652779410">
+    <state width="1525" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1587661453601" />
+    <state width="1525" height="270" key="GridCell.Tab.0.right" timestamp="1587661453602">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1525" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1587652779410" />
+    <state width="1525" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1587661453602" />
     <state x="547" y="233" key="MultipleFileMergeDialog" timestamp="1583429357260">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -461,10 +468,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="476" y="138" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1583419789761" />
-    <state x="326" y="250" key="Vcs.Push.Dialog.v2" timestamp="1585764861629">
+    <state x="326" y="250" key="Vcs.Push.Dialog.v2" timestamp="1587653156418">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="326" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1585764861629" />
+    <state x="326" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1587653156418" />
     <state x="370" y="171" width="816" height="550" key="find.popup" timestamp="1585760655116">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -487,6 +494,6 @@
     <state x="498" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1587652922141" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/data_structure_error_impl@DataStructureErrorImplTest.rcov" NAME="DataStructureErrorImplTest Coverage Results" MODIFIED="1587652773669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="data_structure_error_impl" />
+    <SUITE FILE_PATH="coverage/data_structure_error_impl@DataStructureErrorImplTest.rcov" NAME="DataStructureErrorImplTest Coverage Results" MODIFIED="1587661449627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="data_structure_error_impl" />
   </component>
 </project>
