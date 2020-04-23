@@ -4,10 +4,10 @@ Implements the DataStructureError [Interface](https://github.com/Diligent-Softwa
 
 ## Installation
 
-- Refer the DataStructureError Package's [homepage installation](https://docs.diligentsoftware.org/datastructure-1/packages#installation)
+- Refer the DataStructureError Package's [Installation](https://docs.diligentsoftware.org/datastructure-1/packages#installation)
  section.
 
-## Source documentation
+## Documentation
 
 - Refer the DataStructureError [Implementation](https://docs.diligentsoftware.org/datastructure-1/error/implementation)
  page.

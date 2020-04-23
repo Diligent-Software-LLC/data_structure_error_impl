@@ -5,7 +5,7 @@ require_relative 'lib/data_structure_error_impl/version'
 
 Gem::Specification.new do |spec|
 
-  # Attributes
+  # Required attributes.
   spec.name                  = 'data_structure_error_impl'
   spec.version               = DataStructureError::VERSION
   spec.authors               = ['Diligent Software LLC']
@@ -19,15 +19,15 @@ project's collective page: https://opencollective.com/datastructure. One-time
 appreciated.}
   spec.homepage              = 'https://www.docs.diligentsoftware.org/' +
       'datastructure-1/error/implementation'
-  spec.license               = 'GPL-3.0-only'
+  spec.license = 'GPL-3.0'
   spec.required_ruby_version = '>= 2.6.5'
 
-  # Metadata
+  # Metadata.
   spec.metadata['homepage_uri']    = spec.homepage
   spec.metadata['source_code_uri'] = 'https://www.github' +
       '.com/Diligent-Software-LLC/data_structure_error_impl'
   spec.metadata['changelog_uri']   = 'https://www.docs.diligentsoftware' +
-      '.org/datastructure-1/error/implementation#changelog'
+      '.org/datastructure-1/error/packages#implementation_changelog'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added
@@ -41,12 +41,9 @@ appreciated.}
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  # Development and testing dependencies
-  spec.add_development_dependency 'bundler', '~> 2.1.0'
-  spec.add_development_dependency 'simplecov', '~> 0.17.0'
-  spec.add_development_dependency 'data_structure_error_int', '~> 2.0.0'
-
-  # Gem specific runtime dependencies
-  spec.add_runtime_dependency 'data_structure_error_int', '~> 2.0.0'
+  # Development and testing dependencies.
+  spec.add_development_dependency 'bundler', '~> 2.1'
+  spec.add_development_dependency 'simplecov', '~> 0'
+  spec.add_development_dependency 'data_structure_error_int', '~> 2'
 
 end
