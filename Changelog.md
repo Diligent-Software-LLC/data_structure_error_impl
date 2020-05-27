@@ -1,5 +1,21 @@
 # Changelog
 
+## v3.0.1, 2020-05-27
+
+### Added
+
+- Test coverage.
+- Test file formatting.
+
+### Edited
+
+- Gem Specification's email.
+- Rewrote README.md.
+
+### Fixed
+
+- Gem Specification's homepage and changelog URI.
+
 ## v3.0.0, 2020-04-23
 
 ### Added
