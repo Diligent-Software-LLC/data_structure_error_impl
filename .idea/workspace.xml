@@ -39,9 +39,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a39ba04-0cec-4b55-9229-bf6299fcef07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/data_structure_error_impl_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/data_structure_error_impl_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +184,7 @@
       <workItem from="1585758358484" duration="6199000" />
       <workItem from="1585832856474" duration="1918000" />
       <workItem from="1587608054850" duration="3057000" />
-      <workItem from="1590605192847" duration="1693000" />
+      <workItem from="1590605192847" duration="2016000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized repository and typed version 1.0.0.">
       <created>1574023662398</created>
@@ -391,10 +389,24 @@
       <option name="project" value="LOCAL" />
       <updated>1590618238579</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Development Complete&#10;&#10;Added test coverage and formatting.">
+      <created>1590618682654</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1590618682654</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Prepare Deployment&#10;&#10;Updated Changelog.md.">
+      <created>1590618874997</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1590618874997</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
-        <option name="defaultSearch" value="project: DataStructure Subsystem: Error Component: Implementation State: {Development} Sprints: 8" />
+        <option name="defaultSearch" value="project: DataStructure Subsystem: Error Component: Implementation State: {Prepare Deployment} Sprints: 8" />
         <username>admin</username>
       </YouTrack>
     </servers>
@@ -416,7 +428,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added some README documentation." />
     <MESSAGE value="Completed README and fixed file bugs." />
     <MESSAGE value="Added badges." />
     <MESSAGE value="Fixed architectural problems, updated README, and all tests pass." />
@@ -438,10 +449,11 @@
     <MESSAGE value="Changelog Updated&#10;&#10;Described changes." />
     <MESSAGE value="Setup Complete&#10;&#10;Bumped Major Version. Formatted Gem Specification. Fixed metadata Changelog URI. Deleted runtime dependencies. Updated development dependencies. Updated README.md's Installation and Documentation sections." />
     <MESSAGE value="Development Complete&#10;&#10;Added a .yardopts file assertion." />
-    <MESSAGE value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
     <MESSAGE value="Prepare Deployment&#10;&#10;Missed the interface Major Version. Bumped the version." />
     <MESSAGE value="Setup Complete&#10;&#10;Bumped Patch Version. Edited Gem Specification's email. Fixed Gem Specification's homepage and changelog URI. Rewrote README.md." />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup Complete&#10;&#10;Bumped Patch Version. Edited Gem Specification's email. Fixed Gem Specification's homepage and changelog URI. Rewrote README.md." />
+    <MESSAGE value="Development Complete&#10;&#10;Added test coverage and formatting." />
+    <MESSAGE value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare Deployment&#10;&#10;Updated Changelog.md." />
   </component>
   <component name="WindowStateProjectService">
     <state x="433" y="175" key="#Servers" timestamp="1584360940691">
@@ -452,10 +464,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="471" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.975@0.23.1680.975" timestamp="1583420764014" />
-    <state x="81" y="46" width="1524" height="911" key="CommitChangelistDialog2" timestamp="1590618681890">
+    <state x="81" y="46" width="1524" height="911" key="CommitChangelistDialog2" timestamp="1590618874475">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="81" y="46" width="1524" height="911" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1590618681890" />
+    <state x="81" y="46" width="1524" height="911" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1590618874475" />
     <state x="148" y="123" width="1367" height="774" key="DiffContextDialog" timestamp="1584365904927">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
