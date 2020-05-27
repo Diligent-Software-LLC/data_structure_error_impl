@@ -4,23 +4,23 @@ Implements the DataStructureError [Interface](https://github.com/Diligent-Softwa
 
 ## Installation
 
-- Refer the DataStructureError Package's [Installation](https://docs.diligentsoftware.org/datastructure-1/packages#installation)
- section.
+- Refer Implementation's 
+[Packages](https://docs.diligentsoftware.org/datastructure-1/error/packages#implementation_installation).
 
 ## Documentation
 
-- Refer the DataStructureError [Implementation](https://docs.diligentsoftware.org/datastructure-1/error/implementation)
- page.
+- Refer Implementation's 
+[Homepage](https://docs.diligentsoftware.org/datastructure-1/error/implementation).
 
 ## Contributing
 
 ### Donate
 
 Donations support continuous improvement and maintenance. The aim is a
-reliable, integrable, and endurable DataStructure library. Make a
-donation at the project's collective page: 
-https://opencollective.com/datastructure. One-time and recurring donations are 
-available at $1, $2, $4, $8, and $16. Greatly appreciated.
+ reliable, integrable, and endurable DataStructure library. Make a donation
+  at the project's collective page: https://opencollective.com/datastructure. 
+One-time and recurring donations are available at $1, $2, $4, $8, and $16. 
+Greatly appreciated.
 
 ### Bug Reporting
 
